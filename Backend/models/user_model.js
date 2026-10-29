@@ -4,10 +4,6 @@ const userSchema=new mongoose.Schema({
     username:String,
     email:String,
     password:String,
-    order:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'Order'
-    },
     chat:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Chat'

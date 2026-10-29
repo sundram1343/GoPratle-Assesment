@@ -15,9 +15,6 @@ const orderSchema=new mongoose.Schema({
         enum:['planner','performer','crew'],
         required:true
     },
-    type:{
-        type:String,
-    },
     createdAt:Date.now()
 })
 module.exports=mongoose.model("Order",orderSchema);
